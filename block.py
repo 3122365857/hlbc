@@ -89,18 +89,5 @@ class block:
         if(tmp == self_hash and self.str_to_hex(tmp) <= target):
             return True
         return False
-#class chain:
-    #self.block = 
-a = block()
-a.make("8000000000000000000000000000000000000000000000000000000000000000",0)
-a.mining("你妈没了卧槽去你大爷的",'4')
-print(a.output())
-
-b = a.output()["self_hash"]
-c = block()
-c.make(b,1)
-c.mining("fuckkckck",'4')
-print(c.output())
-
 
     
