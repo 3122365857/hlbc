@@ -5,6 +5,7 @@ Created on Wed Feb 10 15:09:24 2021
 @author: Administrator
 """
 from block import block
+from files import file
 class chain:
     def __init__(self):
         self.num = 0
@@ -55,11 +56,3 @@ class chain:
         signal_mining = True
         a.mining(text,difficult)
         b.add(a)
-a = block()
-a.make("8000000000000000000000000000000000000000000000000000000000000000",1)
-a.mining("你妈没了卧槽去你大爷的",'2')
-signal_syncing_finished = True
-b = chain()
-b.add(a)
-print(b.blocks)
-b.generate("FUCKYOUBITCH","2")

@@ -45,8 +45,8 @@ class block:
             tmp = hashlib.sha256(str(tmp).encode('utf-8'))
             tmp = tmp.hexdigest()
             t_count = t_count + 1
-            if(time.time()>t_t+4):
-                print("挖矿速度： "+str(t_count/4)+"H/s")
+            if(time.time()>t_t+10):
+                print("挖矿速度： "+str(t_count/10)+"H/s")
                 t_count = 0
                 t_t = time.time()
             if(self.str_to_hex(tmp) <= target):
@@ -89,5 +89,4 @@ class block:
         if(tmp == self_hash and self.str_to_hex(tmp) <= target):
             return True
         return False
-
     
